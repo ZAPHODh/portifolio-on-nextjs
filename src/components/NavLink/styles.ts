@@ -13,6 +13,7 @@ export const Wrapper = styled.nav`
     @media ${theme.media.lteMedium} {
       flex-flow: column wrap;
       justify-content: center;
+      display: none;
     }
   `}
 `;

@@ -12,8 +12,12 @@ describe('<NavLink />', () => {
     renderTheme(<NavLink {...props} links={Mock} />);
     expect(screen.getAllByRole('link')).toHaveLength(Mock.length);
   });
-  it('should not  render all MenuLinks', () => {
+  it('should not render all MenuLinks', () => {
     renderTheme(<NavLink {...props} />);
     expect(screen.getAllByRole('link')).toHaveLength(0);
+  });
+  it('should match snapshot ', () => {
+    const { container } = renderTheme(<NavLink {...props} />);
+    expect(container.firstChild).toMatchSnapshot();
   });
 });

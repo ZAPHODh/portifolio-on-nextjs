@@ -2,8 +2,7 @@ import styled, { css } from 'styled-components';
 
 export const Wrapper = styled.div`
   ${({ theme }) => css`
-   background: linear-gradient(${theme.colors.tertiary},${theme.colors.complementary});
-   width: 300px ;
+   width: 49vw ;
    height: 350px;
    border-radius: 5px;
    color: white;
@@ -11,18 +10,25 @@ export const Wrapper = styled.div`
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   margin:20px;
    transition: all 300ms;
    border: none;
+   padding: 0;
+   margin: 0;
+   opacity: 0.8;
   &:hover{
     cursor: pointer;
-    background: ${theme.colors.tertiary};
+    background: rgba(0,0,0,0.1);
+    opacity: 1;
+  }
+
+  @media ${theme.media.lteMedium} {
+    width: 90vw ;
   }
   `}
 `;
 
 export const IconImage = styled.img`
 ${() => css`
-width: 150px;
+width: 64px;
 
 `}`;
