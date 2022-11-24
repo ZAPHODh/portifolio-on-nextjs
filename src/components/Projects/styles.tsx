@@ -27,5 +27,24 @@ export const Container = styled.div`
     flex-direction: column;
     width: 100vw;
   }
+  /* width */
+/* ::-webkit-scrollbar {
+  width: 10px;
+} */
+
+/* Track */
+&::-webkit-slider-track {
+  background: ${theme.colors.primaryColor};
+}
+
+/* Handle */
+&::-webkit-slider-thumb {
+  background: ${theme.colors.secondaryColor};
+}
+
+/* Handle on hover */
+&::-webkit-slider-thumb:hover {
+  background: ${theme.colors.tertiary};
+}
   `}
 `;

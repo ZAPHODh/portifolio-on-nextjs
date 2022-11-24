@@ -29,6 +29,8 @@ export const Description = styled.p`
 export const SocialMedia = styled.span`
   ${() => css`
     width: 50px;
+    margin: 0;
+    padding: 0;
   `}
 `;
 
@@ -36,5 +38,7 @@ export const SocialContainer = styled.div`
   ${() => css`
     display: flex;
     flex-direction: row;
+    margin:0;
+    padding: 0;
   `}
 `;

@@ -10,7 +10,7 @@ export const ProjectCardApi: ProjectCardProps[] = [
     projectName: 'MKS PAGE',
     description:
       'uma SPA feita em NextJs.Uma store simples, feita em um CodeChallenge',
-    github: 'https://github.com/ZAPHODh/portifolio-on-nextjs',
+    github: 'https://github.com/ZAPHODh/MKSPAGE',
   },
   {
     projectName: 'Bot',
