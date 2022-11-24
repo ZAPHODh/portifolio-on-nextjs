@@ -18,4 +18,10 @@ export const ProjectCardApi: ProjectCardProps[] = [
       'Um bot de WhatsApp feito em Node.js. Criado para atendimento e agendamento em um salão de beleza.',
     github: 'https://github.com/ZAPHODh/WPP-bot',
   },
+  {
+    projectName: 'Jogo da velha',
+    description:
+      'Um jogo da velha single player feito apenas com HTML,JS E CSSS',
+    github: 'https://github.com/ZAPHODh/jogoDaVelha',
+  },
 ];

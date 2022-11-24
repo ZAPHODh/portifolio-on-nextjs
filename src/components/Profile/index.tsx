@@ -1,10 +1,16 @@
 import * as Styled from './style';
+type socialMedia = {
+  redeName: string;
+  link: string;
+  icon: string;
+};
 
 export type ProfileProps = {
-  children?: React.ReactNode;
-  name?: string;
+  children: React.ReactNode;
+  name: string;
   photo?: string;
-  description?: string;
+  description: string;
+  socialMedia?: socialMedia[];
 };
 
 export const Profile = ({ name, photo, description }: ProfileProps) => {

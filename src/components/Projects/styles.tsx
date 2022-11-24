@@ -2,12 +2,14 @@ import styled, { css } from 'styled-components';
 
 export const Wrapper = styled.section`
   ${({ theme }) => css`
-    background: linear-gradient(${theme.colors.complementary},${theme.colors.primaryColor});
+    background-color:${theme.colors.complementary};
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-wrap: nowrap;
     color: white;
+
   `}
 `;
 export const Container = styled.div`
@@ -18,8 +20,9 @@ export const Container = styled.div`
     color:white;
     display: flex;
     padding-top:20px ;
-    justify-content: space-evenly;
     align-items: center;
+    overflow-x: auto;
+    overflow-y: hidden;
   @media ${theme.media.lteMedium} {
     flex-direction: column;
     width: 100vw;

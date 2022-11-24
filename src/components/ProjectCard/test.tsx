@@ -5,8 +5,6 @@ import { ProjectCard, ProjectCardProps } from '.';
 const props: ProjectCardProps = {
   projectName: 'string',
   description: 'string',
-  hasSite: false,
-  site: 'string',
   github: 'string',
 };
 

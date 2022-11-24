@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components';
 export const Wrapper = styled.section`
   ${({ theme }) => css`
   width: 100%;
-  background:linear-gradient(${theme.colors.primaryColor},${theme.colors.complementary});
+  background-color:${theme.colors.primaryColor};
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

@@ -3,6 +3,7 @@ import styled, { css } from 'styled-components';
 export const Wrapper = styled.section`
   ${({ theme }) => css`
     width: 300px;
+    height: 250px;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -12,6 +13,7 @@ export const Wrapper = styled.section`
     background-color:transparent;
     margin: 0px 20px;
     position: relative;
+    flex-shrink: 0;
     &:hover{
       /* background-color: rgba(0,0,0,0.1); */
       border-bottom: ${theme.colors.tertiary} 1px solid;
@@ -30,7 +32,8 @@ export const Title = styled.h3`
 
 export const Link = styled.a`
   ${({ theme }) => css`
-
+  position: absolute;
+  bottom: 0;
   text-decoration: none;
   padding: 10px 20px;
   background-color: transparent 0%;
