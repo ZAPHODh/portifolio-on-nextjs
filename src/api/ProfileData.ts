@@ -13,9 +13,9 @@ export const profileData: ProfileProps = {
       link: 'https://www.linkedin.com/in/luis-paulo-silva-martins-3b6a681aa/',
     },
     {
-      redeName: 'Instagram',
-      icon: 'https://img.icons8.com/fluency/240/null/instagram-new.png',
-      link: 'https://www.instagram.com/invites/contact/?i=hmrd7qvnd9wu&utm_content=5pm9fuc',
+      redeName: 'Github',
+      icon: 'https://img.icons8.com/plasticine/100/null/github-squared.png',
+      link: 'https://github.com/ZAPHODh',
     },
   ],
 };
