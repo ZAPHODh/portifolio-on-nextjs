@@ -1,4 +1,4 @@
-# PORTFÓLIO-ON-NEXT
+# PORTFOLIO-ON-NEXT
 
 A portfolio's template made with Next.js and styled-components.
 
