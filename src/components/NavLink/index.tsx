@@ -1,7 +1,7 @@
 import { MenuLink } from 'components/MenuLink';
 import * as Styled from './styles';
 
-type LinkType = { children?: string; link?: string; newTab?: boolean };
+export type LinkType = { name: string; link: string; newTab: false };
 export type NavLinkProps = {
   links: LinkType[];
 };
@@ -11,7 +11,7 @@ export const NavLink = ({ links }: NavLinkProps) => {
     <Styled.Wrapper>
       {links.map((link) => (
         <MenuLink key={link.link} link={link.link}>
-          {link.children}
+          {link.name}
         </MenuLink>
       ))}
     </Styled.Wrapper>

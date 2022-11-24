@@ -1,4 +1,6 @@
-export const Mock = [
-  { name: 'test 1 ', children: 'test 1', link: 'test 1' },
-  { name: 'test 2 ', children: 'test 2', link: 'test 2' },
+import { LinkType } from '.';
+
+export const Mock: LinkType[] = [
+  { name: 'test 1 ', newTab: false, link: 'test 1' },
+  { name: 'test 2 ', newTab: false, link: 'test 2' },
 ];

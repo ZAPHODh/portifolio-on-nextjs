@@ -4,7 +4,7 @@ import { NavLink, NavLinkProps } from '.';
 import { Mock } from './Mock';
 
 const props: NavLinkProps = {
-  links: [{ link: 'link', newTab: false, children: 'any' }],
+  links: [{ link: 'link', newTab: false, name: 'any' }],
 };
 
 describe('<NavLink />', () => {

@@ -6,7 +6,6 @@ type socialMedia = {
 };
 
 export type ProfileProps = {
-  children: React.ReactNode;
   name: string;
   photo?: string;
   description: string;
