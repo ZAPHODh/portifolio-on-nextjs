@@ -3,7 +3,6 @@ import { renderTheme } from '../../styles/render-theme';
 import { Profile, ProfileProps } from '.';
 
 const props: ProfileProps = {
-  children: '',
   name: '',
   photo: '',
   description: '',

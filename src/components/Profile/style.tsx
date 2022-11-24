@@ -23,7 +23,18 @@ export const Description = styled.p`
   padding-left: 20px ;
   padding-right: 20px;
   text-justify: auto;
-  color: ${theme.colors.white}
+  color: ${theme.colors.white};
+  `}
+`;
+export const SocialMedia = styled.span`
+  ${() => css`
+    width: 50px;
+  `}
+`;
 
+export const SocialContainer = styled.div`
+  ${() => css`
+    display: flex;
+    flex-direction: row;
   `}
 `;

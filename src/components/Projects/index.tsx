@@ -7,7 +7,7 @@ export type ProjectsProps = {
 
 export const Projects = ({ ProjectCardApi = [] }: ProjectsProps) => {
   return (
-    <Styled.Wrapper>
+    <Styled.Wrapper id="projects">
       <h2>Projetos</h2>
       <Styled.Container>
         {ProjectCardApi.length > 0

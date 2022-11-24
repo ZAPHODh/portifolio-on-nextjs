@@ -32,7 +32,7 @@ export const Knowledge = ({ KnowledgeCardFather }: KnowledgeProps) => {
 
   return (
     <>
-      <Styled.Title>Conhecimentos</Styled.Title>
+      <Styled.Title id="knowledge">Conhecimentos</Styled.Title>
       <Styled.Wrapper>
         {!state.onOff ? (
           KnowledgeCardFather.map((card) => (
