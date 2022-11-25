@@ -24,27 +24,25 @@ export const Container = styled.div`
     overflow-x: auto;
     overflow-y: hidden;
   @media ${theme.media.lteMedium} {
-    flex-direction: column;
-    width: 100vw;
+    /* flex-direction: column; */
+    width: 82vw;
   }
-  /* width */
-/* ::-webkit-scrollbar {
-  width: 10px;
-} */
+/* width */
+::-webkit-scrollbar {
+  /* width: 5px; */
+  height: 5px;
+}
 
 /* Track */
-&::-webkit-slider-track {
-  background: ${theme.colors.primaryColor};
+::-webkit-scrollbar-track {
+  /* box-shadow: inset 0 0 5px grey; */
+  border-radius: 10px;
 }
 
 /* Handle */
-&::-webkit-slider-thumb {
-  background: ${theme.colors.secondaryColor};
-}
-
-/* Handle on hover */
-&::-webkit-slider-thumb:hover {
-  background: ${theme.colors.tertiary};
+::-webkit-scrollbar-thumb {
+  background:${theme.colors.tertiary};
+  border-radius: 10px;
 }
   `}
 `;
