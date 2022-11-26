@@ -12,7 +12,7 @@ git clone https://github.com/ZAPHODh/portifolio-on-nextjs
 
 ## Usage
 
-in the folder **src/api/** we have some archives who simulate an data from an API REST. You must change the values to one who are properly associate to you.
+in the folder **src/config/** we have some archives who simulate an data from an API REST. You must change the values to one who are properly associate to you.
 
 For example, the file **ProfileData.ts**
 ```javascript
