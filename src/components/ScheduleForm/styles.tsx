@@ -111,7 +111,7 @@ export const ErrorMessage = styled.p`
 
 export const SubmitButton = styled.input`
   ${({ theme }) => css`
-
+    padding: 20px 10px;
     border: none;
     border-radius: 5px;
     &:hover{
