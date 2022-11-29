@@ -1,12 +1,14 @@
-import { KnowledgeCardApi } from 'api/KnowledgeCardApi';
-import { MenuLinkData } from 'api/MenuLinksData';
-import { profileData } from 'api/ProfileData';
-import { ProjectCardApi } from 'api/ProjectCardApi';
+import { KnowledgeCardApi } from 'config/KnowledgeCardApi';
+import { MenuLinkData } from 'config/MenuLinksData';
+import { profileData } from 'config/ProfileData';
+import { ProjectCardApi } from 'config/ProjectCardApi';
 import { Knowledge } from 'components/Knowledge';
 import { NavLink } from 'components/NavLink';
 import { Profile } from 'components/Profile';
 import { Projects } from 'components/Projects';
 import { OnOrOffKnowledge } from 'context/OnorOffKnowledge/Context';
+import { CrudExample } from 'components/CrudExample';
+import { LoginOrScheduleContext } from 'context/isLoginOrIsSquedule/Context';
 const { name, photo, description, socialMedia } = profileData;
 
 function Home() {
@@ -21,6 +23,9 @@ function Home() {
       />
       <Knowledge KnowledgeCardFather={KnowledgeCardApi}></Knowledge>
       <Projects ProjectCardApi={ProjectCardApi}></Projects>
+      <LoginOrScheduleContext>
+        <CrudExample />
+      </LoginOrScheduleContext>
     </OnOrOffKnowledge>
   );
 }

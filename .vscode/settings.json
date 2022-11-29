@@ -1,4 +1,7 @@
 {
   "window.zoomLevel": 0,
-  "prettier.configPath": "./.prettierrc.json"
+  "prettier.configPath": "./.prettierrc.json",
+  "cSpell.words": [
+    "Formik"
+  ]
 }
