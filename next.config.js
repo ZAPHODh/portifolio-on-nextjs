@@ -13,8 +13,7 @@ const nextConfig = {
     return [
       {
         source: '/',
-        destination:
-          'https://ec2-18-231-91-46.sa-east-1.compute.amazonaws.com:3000',
+        destination: 'https://comforting-quokka-780e1b.netlify.app:3000',
       },
     ];
   },
