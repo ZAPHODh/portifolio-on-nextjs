@@ -14,7 +14,7 @@ const nextConfig = {
       {
         source: '/',
         destination:
-          'https://ec2-54-94-101-205.sa-east-1.compute.amazonaws.com:3000',
+          'https://ec2-18-231-91-46.sa-east-1.compute.amazonaws.com:3000',
       },
     ];
   },
