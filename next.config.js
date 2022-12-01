@@ -13,7 +13,7 @@ const nextConfig = {
     return [
       {
         source: '/',
-        destination: 'https://comforting-quokka-780e1b.netlify.app:3000',
+        destination: 'https://sweet-ghosts-slide-187-126-56-209.loca.lt',
       },
     ];
   },
