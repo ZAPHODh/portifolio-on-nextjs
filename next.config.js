@@ -13,7 +13,7 @@ const nextConfig = {
     return [
       {
         source: '/',
-        destination: 'https://sweet-ghosts-slide-187-126-56-209.loca.lt',
+        destination: 'https://icy-colts-knock-187-126-56-209.loca.lt',
       },
     ];
   },
