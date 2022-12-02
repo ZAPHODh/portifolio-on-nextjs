@@ -3,11 +3,8 @@ import { LoginForm } from 'components/LoginForm';
 import { useContext, useState } from 'react';
 import { signIn } from 'next-auth/react';
 import { LoginOrSchedule } from 'context/isLoginOrIsSquedule/Context';
-export type FormsProps = {
-  text?: string;
-};
 
-export const Forms = ({ text }: FormsProps) => {
+export const Forms = () => {
   const { state, dispatch } = useContext(LoginOrSchedule);
   const [errorLogin, setErrorLogin] = useState('');
   const [errorSchedule, setErrorSchedule] = useState('');

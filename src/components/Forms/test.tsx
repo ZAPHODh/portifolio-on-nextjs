@@ -1,12 +1,10 @@
 import { screen } from '@testing-library/react';
 import { renderTheme } from '../../styles/render-theme';
-import { Forms, FormsProps } from '.';
-
-const props: FormsProps = {};
+import { Forms } from '.';
 
 describe('<Forms />', () => {
   it('should render', () => {
-    renderTheme(<Forms {...props} />);
+    renderTheme(<Forms />);
 
     expect(screen.getByRole('heading', { name: 'Oi' })).toBeInTheDocument();
   });
