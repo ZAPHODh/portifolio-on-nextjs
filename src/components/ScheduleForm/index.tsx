@@ -58,94 +58,92 @@ export const ScheduleForm = ({
   };
   return (
     <Styled.Wrapper>
-      <Styled.Wrapper>
-        <h2>Amostra de formulário de Cadastro</h2>
-        <Styled.Form onSubmit={handleSubmitForm}>
-          {!!errorMessage && (
-            <Styled.ErrorMessage>{errorMessage}</Styled.ErrorMessage>
-          )}
-          <Styled.InputWrapper>
-            <Styled.InputText
-              id="user-name"
-              type="text"
-              name="user-name"
-              onChange={(e) => {
-                setForm((f) => {
-                  return { ...f, name: e.target.value };
-                });
-              }}
-              value={form.name}
-            />
-            <Styled.InputLabel htmlFor="user-name">Nome</Styled.InputLabel>
-          </Styled.InputWrapper>
-          <Styled.InputWrapper>
-            <Styled.InputText
-              id="user-email"
-              type="email"
-              name="user-email"
-              onChange={(e) => {
-                setForm((f) => {
-                  return { ...f, email: e.target.value };
-                });
-              }}
-              value={form.email}
-            />
-            <Styled.InputLabel htmlFor="user-email">Email</Styled.InputLabel>
-          </Styled.InputWrapper>
-          <Styled.InputWrapper>
-            <Styled.InputText
-              id="user-age"
-              type="number"
-              name="user-age"
-              onChange={(e) => {
-                setForm((f) => {
-                  return { ...f, age: Number(e.target.value) };
-                });
-              }}
-              value={form.age === 0 ? '' : form.age}
-            />
-            <Styled.InputLabel htmlFor="user-age">Idade</Styled.InputLabel>
-          </Styled.InputWrapper>
-          <Styled.InputWrapper>
-            <Styled.InputText
-              id="user-pássword"
-              type="password"
-              name="user-password"
-              onChange={(e) => {
-                setForm((f) => {
-                  return { ...f, password: e.target.value };
-                });
-              }}
-              value={form.password}
-            />
-            <Styled.InputLabel htmlFor="user-password">Senha</Styled.InputLabel>
-          </Styled.InputWrapper>
-          <Styled.InputWrapper>
-            <Styled.InputText
-              id="user-confirmPass"
-              type="password"
-              name="user-confirmPass"
-              onChange={(e) => {
-                setForm((f) => {
-                  return { ...f, confirmPass: e.target.value };
-                });
-              }}
-              value={form.confirmPass}
-            />
-            <Styled.InputLabel htmlFor="user-confirmPass">
-              Confirme sua senha
-            </Styled.InputLabel>
-          </Styled.InputWrapper>
-          <Styled.newUser onClick={handleLogin}>
-            Já tem cadastro?? faça o login agora!
-          </Styled.newUser>
-          <Styled.SubmitButton
-            type="submit"
-            value={loading ? 'Cadastrando...' : 'Cadastrar'}
-            disabled={loading}
+      <h2>Amostra de formulário de Cadastro</h2>
+      <Styled.Form onSubmit={handleSubmitForm}>
+        {!!errorMessage && (
+          <Styled.ErrorMessage>{errorMessage}</Styled.ErrorMessage>
+        )}
+        <Styled.InputWrapper>
+          <Styled.InputText
+            id="user-name"
+            type="text"
+            name="user-name"
+            onChange={(e) => {
+              setForm((f) => {
+                return { ...f, name: e.target.value };
+              });
+            }}
+            value={form.name}
           />
-        </Styled.Form>
-      </Styled.Wrapper>
+          <Styled.InputLabel htmlFor="user-name">Nome</Styled.InputLabel>
+        </Styled.InputWrapper>
+        <Styled.InputWrapper>
+          <Styled.InputText
+            id="user-email"
+            type="email"
+            name="user-email"
+            onChange={(e) => {
+              setForm((f) => {
+                return { ...f, email: e.target.value };
+              });
+            }}
+            value={form.email}
+          />
+          <Styled.InputLabel htmlFor="user-email">Email</Styled.InputLabel>
+        </Styled.InputWrapper>
+        <Styled.InputWrapper>
+          <Styled.InputText
+            id="user-age"
+            type="number"
+            name="user-age"
+            onChange={(e) => {
+              setForm((f) => {
+                return { ...f, age: Number(e.target.value) };
+              });
+            }}
+            value={form.age === 0 ? '' : form.age}
+          />
+          <Styled.InputLabel htmlFor="user-age">Idade</Styled.InputLabel>
+        </Styled.InputWrapper>
+        <Styled.InputWrapper>
+          <Styled.InputText
+            id="user-pássword"
+            type="password"
+            name="user-password"
+            onChange={(e) => {
+              setForm((f) => {
+                return { ...f, password: e.target.value };
+              });
+            }}
+            value={form.password}
+          />
+          <Styled.InputLabel htmlFor="user-password">Senha</Styled.InputLabel>
+        </Styled.InputWrapper>
+        <Styled.InputWrapper>
+          <Styled.InputText
+            id="user-confirmPass"
+            type="password"
+            name="user-confirmPass"
+            onChange={(e) => {
+              setForm((f) => {
+                return { ...f, confirmPass: e.target.value };
+              });
+            }}
+            value={form.confirmPass}
+          />
+          <Styled.InputLabel htmlFor="user-confirmPass">
+            Confirme sua senha
+          </Styled.InputLabel>
+        </Styled.InputWrapper>
+        <Styled.newUser onClick={handleLogin}>
+          Já tem cadastro?? faça o login agora!
+        </Styled.newUser>
+        <Styled.SubmitButton
+          type="submit"
+          value={loading ? 'Cadastrando...' : 'Cadastrar'}
+          disabled={loading}
+        />
+      </Styled.Form>
     </Styled.Wrapper>
   );
 };

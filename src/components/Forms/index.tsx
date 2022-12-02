@@ -39,7 +39,7 @@ export const Forms = () => {
       {
         method: 'POST',
         headers: {
-          'Content-Type': 'text/plain',
+          'Content-Type': 'application/jsonn',
         },
         body: JSON.stringify({ name, email, password, age }),
       },
