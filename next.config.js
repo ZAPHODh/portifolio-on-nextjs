@@ -8,15 +8,6 @@ const nextConfig = {
   compiler: {
     styledComponents: true,
   },
-  async rewrites() {
-    return [
-      {
-        source: '/',
-        destination:
-          'https://cfb1-2804-d41-ef30-c600-2d10-d67a-8eab-4f.sa.ngrok.io/:path',
-      },
-    ];
-  },
   trailingSlash: true,
 };
 
