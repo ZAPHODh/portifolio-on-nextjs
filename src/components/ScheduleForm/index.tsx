@@ -42,6 +42,8 @@ export const ScheduleForm = ({
     if (onScheduleSend) {
       await onScheduleSend(name, email, password, age);
     }
+
+    setLoading(false);
     setForm({
       name: '',
       email: '',
@@ -49,7 +51,6 @@ export const ScheduleForm = ({
       confirmPass: '',
       age: 0,
     });
-    setLoading(false);
   };
 
   const handleLogin = () => {
@@ -65,6 +66,7 @@ export const ScheduleForm = ({
           )}
           <Styled.InputWrapper>
             <Styled.InputText
+              id="user-name"
               type="text"
               name="user-name"
               onChange={(e) => {
@@ -78,6 +80,7 @@ export const ScheduleForm = ({
           </Styled.InputWrapper>
           <Styled.InputWrapper>
             <Styled.InputText
+              id="user-email"
               type="email"
               name="user-email"
               onChange={(e) => {
@@ -91,6 +94,7 @@ export const ScheduleForm = ({
           </Styled.InputWrapper>
           <Styled.InputWrapper>
             <Styled.InputText
+              id="user-age"
               type="number"
               name="user-age"
               onChange={(e) => {
@@ -104,6 +108,7 @@ export const ScheduleForm = ({
           </Styled.InputWrapper>
           <Styled.InputWrapper>
             <Styled.InputText
+              id="user-pássword"
               type="password"
               name="user-password"
               onChange={(e) => {
@@ -117,6 +122,7 @@ export const ScheduleForm = ({
           </Styled.InputWrapper>
           <Styled.InputWrapper>
             <Styled.InputText
+              id="user-confirmPass"
               type="password"
               name="user-confirmPass"
               onChange={(e) => {
