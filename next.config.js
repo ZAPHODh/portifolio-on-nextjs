@@ -12,9 +12,9 @@ const nextConfig = {
   async rewrites() {
     return [
       {
-        source: '/:path',
+        source: '/',
         destination:
-          'https://a876-2804-d41-ef30-c600-a1c7-b72c-7ecd-447.sa.ngrok.io/:path',
+          'https://a876-2804-d41-ef30-c600-a1c7-b72c-7ecd-447.sa.ngrok.io/user/:path',
       },
     ];
   },
