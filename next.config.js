@@ -13,7 +13,8 @@ const nextConfig = {
     return [
       {
         source: '/',
-        destination: 'https://icy-colts-knock-187-126-56-209.loca.lt',
+        destination:
+          'https://a876-2804-d41-ef30-c600-a1c7-b72c-7ecd-447.sa.ngrok.io',
       },
     ];
   },
