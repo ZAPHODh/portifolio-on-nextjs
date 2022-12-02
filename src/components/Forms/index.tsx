@@ -41,9 +41,8 @@ export const Forms = ({ text }: FormsProps) => {
       `${process.env.NEXT_PUBLIC_API_URL}${process.env.NEXT_PUBLIC_API_REGISTER}`,
       {
         method: 'POST',
-        credentials: 'include',
         headers: {
-          'Content-Type': 'application/json',
+          'Content-Type': 'text/plain',
         },
         body: JSON.stringify({ name, email, password, age }),
       },
