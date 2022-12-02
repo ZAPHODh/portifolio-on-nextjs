@@ -2,7 +2,7 @@ import { ProfileProps } from 'components/Profile';
 
 export const profileData: ProfileProps = {
   name: 'Luis Paulo Martins',
-  photo: 'https://ibb.co/B3mqv5h',
+  photo: 'https://i.ibb.co/B3mqv5h/f752857d-fb9a-4a2e-9cf8-804d1961d309.jpg',
   description:
     'Olá, Me chamo Luis. Gosto de tecnologia e computação desde criança. Programo em javascript há dois anos. Abaixo, mostratei um pouco de meus conhecimentos.',
   socialMedia: [
