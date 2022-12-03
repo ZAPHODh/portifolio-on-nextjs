@@ -9,6 +9,7 @@ import { Projects } from 'components/Projects';
 import { OnOrOffKnowledge } from 'context/OnorOffKnowledge/Context';
 import { CrudExample } from 'components/CrudExample';
 import { LoginOrScheduleContext } from 'context/isLoginOrIsSquedule/Context';
+import { Footer } from 'components/Footer';
 const { name, photo, description, socialMedia } = profileData;
 
 function Home() {
@@ -26,6 +27,7 @@ function Home() {
       <LoginOrScheduleContext>
         <CrudExample />
       </LoginOrScheduleContext>
+      <Footer title="Luis Paulo Martins" />
     </OnOrOffKnowledge>
   );
 }

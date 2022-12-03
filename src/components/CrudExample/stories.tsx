@@ -1,12 +1,12 @@
-import { Meta, Story } from '@storybook/react/types-6-0';
-import { CrudExample, CrudExampleProps } from '.';
+import { Story } from '@storybook/react/types-6-0';
+import { CrudExample } from '.';
 
 export default {
   title: 'CrudExample',
   component: CrudExample,
-} as Meta<CrudExampleProps>;
+};
 
-export const Template: Story<CrudExampleProps> = (args) => {
+export const Template: Story = (args) => {
   return (
     <div>
       <CrudExample {...args} />

@@ -3,11 +3,7 @@ import { LoggedContent } from 'components/LoggedContent';
 import { Forms } from 'components/Forms';
 import { useSession } from 'next-auth/react';
 
-export type CrudExampleProps = {
-  string?: string;
-};
-
-export const CrudExample = ({ string }: CrudExampleProps) => {
+export const CrudExample = () => {
   const { status } = useSession();
 
   if (status === 'loading') {

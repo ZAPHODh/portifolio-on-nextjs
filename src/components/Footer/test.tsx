@@ -1,10 +1,14 @@
 import { screen } from '@testing-library/react';
 import { renderTheme } from '../../styles/render-theme';
-import { CrudExample } from '.';
+import { Footer, FooterProps } from '.';
 
-describe('<CrudExample />', () => {
+const props: FooterProps = {
+  title: 'any',
+};
+
+describe('<Footer />', () => {
   it('should render', () => {
-    renderTheme(<CrudExample />);
+    renderTheme(<Footer {...props} />);
 
     expect(screen.getByRole('heading', { name: 'Oi' })).toBeInTheDocument();
   });
