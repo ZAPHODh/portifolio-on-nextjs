@@ -9,7 +9,7 @@ export default {
 export const Template: Story<FooterProps> = (args) => {
   return (
     <div>
-      <Footer {...args} />
+      <Footer {...args} title="Luis Paulo Martins" />
     </div>
   );
 };
