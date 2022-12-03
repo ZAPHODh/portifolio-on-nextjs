@@ -13,7 +13,7 @@ const nextConfig = {
       {
         source: '/:path',
         destination:
-          'https://3023-2804-d41-ef30-c600-2d10-d67a-8eab-4f.sa.ngrok.io/:path',
+          'https://a316-2804-d41-ef30-c600-b8f0-4a95-b517-81e6.sa.ngrok.io/:path',
       },
     ];
   },
