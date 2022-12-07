@@ -24,4 +24,10 @@ export const ProjectCardApi: ProjectCardProps[] = [
       'Um jogo da velha single player feito apenas com HTML,JS E CSSS',
     github: 'https://github.com/ZAPHODh/jogoDaVelha',
   },
+  {
+    projectName: 'API Rest',
+    description:
+      'O sistema de login e registro deste portifólio, uma aplicação express',
+    github: 'hhttps://github.com/ZAPHODh/authserver',
+  },
 ];
