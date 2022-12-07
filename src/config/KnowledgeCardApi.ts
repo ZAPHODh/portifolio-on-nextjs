@@ -23,11 +23,6 @@ export const KnowledgeCardApi: Card[] = [
           confident: 75,
         },
         {
-          name: 'NextAuth',
-          icon: 'https://user-images.githubusercontent.com/28990749/71623319-6795bf80-2bba-11ea-8401-6192d94f3fef.png',
-          confident: 70,
-        },
-        {
           name: 'Styled-Components',
           icon: 'https://cdn.worldvectorlogo.com/logos/styled-components-1.svg',
           confident: 85,
