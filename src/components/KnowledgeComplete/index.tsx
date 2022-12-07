@@ -23,7 +23,7 @@ export const KnowledgeComplete = ({ cardComplete }: KnowledgeCompleteProps) => {
           <Styled.KnowledgeIcon src={each.icon} alt={each.name} />
           <div>
             <h3 style={{ maxWidth: '200px' }}>{each.name}</h3>
-            <Styled.ProgressBar>
+            {/* <Styled.ProgressBar>
               <div
                 style={{
                   width: `${each.confident}%`,
@@ -34,7 +34,7 @@ export const KnowledgeComplete = ({ cardComplete }: KnowledgeCompleteProps) => {
                   left: '-0.2rem',
                 }}
               />
-            </Styled.ProgressBar>
+            </Styled.ProgressBar> */}
           </div>
         </Styled.KnowledgeContainer>
       ))}
